@@ -1,0 +1,84 @@
+body {
+    background-color: #181818;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #202020;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.search-container input[type="search"] {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.search-button {
+    background-color: #323232;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    background-color: #202020;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.video {
+    background-color: #333;
+    padding: 10px;
+}
+
+.video img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.youtuber-pic {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text-info p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
