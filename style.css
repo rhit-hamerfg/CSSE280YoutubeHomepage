@@ -47,6 +47,7 @@ nav li {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    object-fit: contain;
 }
 
 .video {
@@ -60,6 +61,7 @@ nav li {
     min-height: 12em;
     display: table-cell;
     vertical-align: middle;
+    object-fit: contain;
 
 }
 
@@ -70,11 +72,17 @@ nav li {
 }
 
 .youtuber-pic {
-    width: 40px;
-    height: 40px;
+    max-width: 4em;
+    max-height: 4em;
+    min-width: 2em;
+    min-height: 2em;
     background-color: #555;
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: contain;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 .text-info p {
