@@ -57,6 +57,10 @@ nav li {
 .video img {
     max-width: 100%;
     height: auto;
+    min-height: 12em;
+    display: table-cell;
+    vertical-align: middle;
+
 }
 
 .video-info {
@@ -79,6 +83,9 @@ nav li {
 
 @media (max-width: 768px) {
     .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .video img {
         grid-template-columns: 1fr;
     }
 }
